@@ -40,8 +40,8 @@ function calcular() {
 
     // Exibir resultados formatados com os nomes e os valores que cada pessoa deve pagar
     resultadoDiv.innerHTML = `
-        <p>${nome1} paga: R$ ${valor1.toFixed(2)}</p>
-        <p>${nome2} paga: R$ ${valor2.toFixed(2)}</p>
+        <p>${nome1} valor a pagar: R$ ${valor1.toFixed(2)}</p>
+        <p>${nome2} valor a pagar: R$ ${valor2.toFixed(2)}</p>
     `;
      
     // Exibir o botão "Nova Conta" após o cálculo
