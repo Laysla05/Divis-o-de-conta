@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisão de Contas</title>
+    <link rel="stylesheet" href="deixandobonito.css">
+    <script src="dividindo.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <!-- Cabeçalho -->
+    <h1>Divisão de Contas</h1>
+    <p class="subtitle">Calcule de forma justa com base na renda</p>
+    <!-- Formulário de entrada -->
+    <div class="formulario">
+        <!-- Campos de entrada para os nomes, rendas e valor da conta -->
+        <div class="input-group">
+            <label>Primeiro nome</label>
+            <input type="text" name="nome1" placeholder="Ex: Ingrid">
+        </div>
+        <!-- Campo de entrada para a renda do primeiro nome -->
+        <div class="input-group">
+            <label>Primeira renda</label>
+            <input type="number" name="renda1" placeholder="Ex: 2500">
+        </div>
+        <!-- Campo de entrada para o segundo nome -->
+        <div class="input-group">
+            <label>Segundo nome</label>
+            <input type="text" name="nome2" placeholder="Ex: João">
+        </div>
+        <!-- Campo de entrada para a renda do segundo nome -->
+        <div class="input-group">
+            <label>Segunda renda</label>
+            <input type="number" name="renda2" placeholder="Ex: 1800">
+        </div>
+        <!-- Campo de entrada para o valor total da conta -->
+        <div class="input-group">
+            <label>Valor da conta</label>
+            <input type="number" name="valor_conta" placeholder="Ex: 1200">
+        </div>
+        <!-- Botão para calcular a divisão da conta -->
+            <button onclick="calcular()">Calcular</button>
+        </div>
+    
+        <!-- Resultado da divisão da conta -->
+        <div class="resultado">Valor que cada um deve pagar:</div>
+
+        <button id="btnNovaConta" onclick="novaConta()" style="display: none;">
+            Nova Calculo 
+        </button>
+
+                                <!--Rodapé-->
+    <footer class="footer">
+    <p>
+        Desenvolvido por 
+        <a href="https://github.com/laysla05" target="_blank">Laysla Silva</a> 
+        & 
+        <a href="https://www.linkedin.com/in/daniele-morais-correia/" target="_blank">Daniele Morais</a>
+    </p>
+</footer>
+</body>
+</html>

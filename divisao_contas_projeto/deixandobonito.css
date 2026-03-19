@@ -1,0 +1,135 @@
+/* Reset de estilos para garantir consistência entre navegadores */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*contêiner principal */
+.container {
+    background: rgb(230, 230, 230);
+    padding: 30px;
+    border-radius: 16px;
+    width: 380px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+/*título principal */
+h1 {
+    margin-bottom: 10px;
+}
+/*subtítulo*/
+.subtitle {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+/*formulário de entrada */
+.input-group {
+    text-align: left;
+    margin-bottom: 10px;
+}
+/*palavras em cima dos campos de entrada */
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+/*campos de entrada*/
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    outline: none;
+    transition: 0.3s;
+}
+/*efeito de foco nos campos de entrada*/
+.input-group input:focus {
+    border-color: #ff0000;
+}
+/*botão de calcular*/
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #8b5376, #000000);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/*efeito no botão*/
+button:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+/*botão novo cálculo*/
+#btnNovaConta {
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 14px;
+    width: auto;
+}
+/*resultado da divisão da conta*/
+.resultado {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+/*parágrafos dentro do resultado*/
+.resultado p {
+    margin: 5px 0;
+}
+/* rodapé*/
+.footer {
+  color: #050505;
+  text-align: center;
+  font-size: 13px;
+}
+/*parágrafo dentro do rodapé*/
+.footer p {
+  margin: 70px 0 0;
+}
+/*links dentro do rodapé*/
+.footer a {
+  color: #000000a9;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+/*efeito de hover nos links do rodapé*/
+.footer a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+    
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
